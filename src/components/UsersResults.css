@@ -1,0 +1,17 @@
+.user-bio-column {
+    width: 35em;
+}
+
+.user-name-column {
+    width: 8em;
+}
+
+.user-user-name-column {
+    width: 8em;
+}
+
+.user-table-container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
