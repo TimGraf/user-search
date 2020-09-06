@@ -1,6 +1,6 @@
 {
   "name": "github-user-search",
-  "homepage": "https://timgraf.github.io/user-search",
+  "homepage": "https://user-search-gitlab.herokuapp.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
