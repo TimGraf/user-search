@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { TextField } from '@material-ui/core';
+import { SearchContext } from '../context/SearchContext';
 import './UsersSearch.css';
 
-export default function UsersSearch({search, setSearch}) {
+export default function UsersSearch() {
+    const [{search, setSearch}] = useContext(SearchContext);
+
     const onChange = event => {
         const searchString = event.target.value;
         setSearch(searchString);

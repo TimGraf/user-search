@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Table from '@material-ui/core/Table';
 import TableRow from '@material-ui/core/TableRow';
 import TableCell from '@material-ui/core/TableCell';
@@ -9,9 +9,12 @@ import TableFooter from '@material-ui/core/TableFooter';
 import TablePagination from '@material-ui/core/TablePagination';
 import Paper from '@material-ui/core/Paper';
 import UserRow from './UserRow';
+import { SearchContext } from '../context/SearchContext';
 import './UsersResults.css';
 
-export default function UsersResults({users, total, page, pageSize, setPage, setPageSize}) {
+export default function UsersResults() {
+    const [{users, page, setPage, pageSize, setPageSize, total}] = useContext(SearchContext);
+
     const handleChangePage = (event, newPage) => {
         setPage(newPage);
     };
